@@ -29,9 +29,9 @@
       </header>
 
       <main class="mdl-layout__content">
-        <div id="draw">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-        <div class="mdl-layout__drawer ">
+       
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer" id="draw">
+        <div class="mdl-layout__drawer" >
         <span class="mdl-layout-title">
         </span>
         <nav class="mdl-navigation">
@@ -44,7 +44,7 @@
         </nav>
         </div>
         </div>
-        </div>
+        
 
 
 
@@ -176,7 +176,8 @@
 </div>
 </div>
 
-<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu header_color"
+<div class="mdl-menu__outline mdl-menu--bottom-left" style="width: 161%;height: 113px;"></div>
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu header_color" id="drop1"
     for="drop-down">
   <li class="mdl-menu__item"><a href="/site/" style="color:black; text-decoration: none;">Site Settings</li>
   <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="/changepassword/" style="color:black">Change Password</li>
@@ -193,6 +194,7 @@
   <li class="mdl-menu__item"><a href="/pending/" style="color:black; text-decoration: none;">Pending Payment History</li>
   <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="/paid/" style="color:black">Paid Payment History</li>
 </ul>
+
 </body>
 </html>
 <style>
@@ -217,7 +219,7 @@
     /* border-top: 1px solid rgba(0,0,0,.1); */
     background-color: #03a9f4;
 }.mdl-card.mdl-shadow--2dp {
-    width: 173px;
+    width: 200px;
     margin-left: 211px;
     margin-top: 20px;
 }
@@ -259,7 +261,7 @@ div#a1 {
     margin-left: 19px;
 }
 div#a2 {
-    margin-left: -305px;
+    margin-left: -264px;
 }
 div#card4 {
     background-color: rgba(196, 3, 244, 0.93);
@@ -378,7 +380,7 @@ div#a2 {
     /* margin-top: -13px !important; */
 }
 select#professsion1 {
-    margin-left: 233px !important;
+    margin-left: 265px !important;
     margin-top: 20px !important;
     width: 98px !important;
 }
@@ -397,7 +399,10 @@ label#a3 {
     font-size: 20px !important;
     margin-top: 33px !important;
 }*/*/
+.mdl-mini-footer.mdl-layout--fixed-mini-footer{
 
+      padding-left: 100%
+}
 .mdl-cell.mdl-cell--9-col {
     margin-left: 357px;
 }
@@ -412,5 +417,23 @@ h2.mdl-card__title-text {
 hr#horizontal {
     margin-top: -20px;
 }
+#drop-down1{
+  height: 100%;
+    width:17;
+}
+.mdl-layout__drawer{
+  height:100%;
+  width:17%;
+}
+/*drop-down{
+height:100%;
+  width:17%;
 
+}*/
+.mdl-menu__outline.mdl-menu--bottom-left{
+  width: 241.406px; height: 113px;
+}
+.mdl-menu__outline.mdl-menu--bottom-left{
+
+}
 </style>

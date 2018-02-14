@@ -29,7 +29,7 @@
       </div>
       </header>
 
-      <main class="mdl-layout__content">
+       <main class="mdl-layout__content">
         <div id="draw">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
       <div class="mdl-layout__drawer">
@@ -46,13 +46,10 @@
       </div>
    </div>
  </div>
-
- 
- <!-- <div> <h4> Rider Management</h4></div> -->
-
 <div class="mdl-cell mdl-cell--12-col mdl-grid ">   
       <div class="mdl-layout-spacer "></div>
-       <div class="mdl-cell mdl-cell--6-col" style="margin-right: -140px !important;"> 
+       <div class="mdl-cell mdl-cell--6-col" style="float: right;
+    margin-right: 32%;"> 
     <h4>Rider Management</h4>
         <div class="mdl-cell mdl-cell--6-col" style="    margin-right: -181px !important;
     margin-top: 44px;" id="drop"> 
@@ -66,16 +63,22 @@
           <option value="option3">100</option>
         </select></span>
         <h6><span>Entries</span></h6>
+        
   </div>
-   <div class="mdl-layout-spacer "></div>
-</div></div>
- <div class="mdl-cell mdl-cell--6-col" style="margin-right: -183px !important;"> 
-
-<form id ="search">
- <input type="search" name="search" value="">
-</form>
+</div>
 
 </div>
+<form action="#" id="search">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="site-search">
+                <!-- <i class="material-icons">search</i> -->
+              </label>
+              <div class="mdl-textfield">
+                <input class="border_font mdl-textfield__input" type="search" id="site-search" />
+                <label class="mdl-textfield__label" for="site-search"></label>
+              </div>
+            </div>
+        </form>
 
 <div class="mdl-cell mdl-cell--12-col mdl-grid " id="table">   
       <div class="mdl-layout-spacer "></div>
@@ -130,6 +133,7 @@
 
 <!-- </div> -->
 </div>
+
 <div id="button">
 <div class="mdl-cell mdl-cell--12-col mdl-grid " style=""> 
 <div class="mdl-layout-spacer"></div>
@@ -160,12 +164,9 @@
   </div>
 </footer>
 </div>
-
 </div>
 </div>
-
-<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu header_color"
-    for="drop-down">
+<ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu header_color" for="drop-down">
   <li class="mdl-menu__item"><a href="/site/" style="color:black">Site Settings</li>
   <li class="mdl-menu__item mdl-menu__item--full-bleed-divider"><a href="/changepassword/" style="color:black">Change Password</li>
 </ul>
@@ -183,263 +184,78 @@
 </ul>
 
 </body>
-
 </html>
+
+
 <style>
-  select#professsion1 {
+   select#professsion1 {
     margin-top: -42px;
     padding: left:12px;
-    margin-right: 589px;
+    margin-right: 225px;
     /* padding-right: 3px; */
-    width: 9%;
+    width: 12%;
 }
-div#drop {
-    margin-bottom: 36px;
-    margin: 31px 44px 59px -213px;
-}
-h6{
+h6, p {
     font-weight: 400;
     line-height: 24px;
-    margin: -27px 80px 71px 385px;
-}
-.mdl-cell.mdl-cell--12-col.mdl-grid {
-    margin-left: -127px;
+    margin-top: -28px;
+    margin-left: 126px;
 }
 
-h4 {
-    font-size: 24px;
-    line-height: 59px;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0px 57px -26px -258px;
-}
-div#table {
-    /*margin-top: 274px;*/
-    float:left;
-}
-#search {
+form#search {
+    margin-left: 308px;
+    margin-top: -8%;
     float: right;
-    border-color: bisque;
-    margin: 100px 100;
-    margin: -154px -811px 60px 100px;
+    margin-right: 176px;
 }
-.mdl-data-table {
-    position: relative;
-    border: 1px solid rgba(0,0,0,.12);
-    border-collapse: collapse;
-    white-space: nowrap;
-    font-size: 13px;
-    background-color: #fff;
-    width: 69%;
-    margin-left:20px;
+input#site-search {
+    width: 76%;
 }
-/*table.mdl-data-table.mdl-js-data-table {
-    width: 70%;
-    padding-right: 144px;
-    min-width: 795px;
-    margin-right: -29px;
-    padding-left: -27px;
-    padding: initial;
-    margin-top: -39px;
-}*/
+label.mdl-textfield__label {
+    width: 76%;
+}
+.border_font
+{
+
+    
+    border:1px solid;
+    padding-bottom:0%;
+        margin-top: 25px;
+        margin-left: -463px;
+
+}
+.border_font {
+    border: 1px solid;
+    padding-bottom: 0%;
+    margin-top: 25px;
+    margin-left: 0px;
+}
 table.mdl-data-table.mdl-js-data-table {
-    /*width: 72%;
-    padding-right: 144px;
-    min-width: 795px;
-    margin-right: -29px;
-    padding-left: -27px;
-    padding: initial;*/
-    margin-top: -39px;
-    margin: -64px 82px 82px 66px;
-}
-
-select#professsion1 {
-    margin-top: -42px;
-    padding: left:12px;
-    /* margin-right: 601px; */
-    /* padding-right: 3px; */
-    margin-left: 20px;
-    width: 12%;
-    padding-left: 38px;
-}
-
-.mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer.has-drawer.is-upgraded.is-small-screen {
-    border-color: bisque;
-}
-
-div#button {
-    margin-right: 121px;
-}
-button#button2 {
-    margin-top: 5px;
-    margin-right: -44px;
-}
-
-button#button3 {
-    margin-top: -60px;
-    margin-right: -156px;
-    padding-right: 35px;
-}
-footer.mdl-mini-footer {
-    margin-left: -320px;
-    padding-right: 453px;
-    padding-left: -70px;
-    margin-right: -207px !important;
-    width: 100% !important;
-    margin-top: 105px;
-}
-
-
-
-
-.mdl-mini-footer .mdl-logo {
-    line-height: 14px;
-    margin-left: 638px;
-    width:100% !important;
-}
-
-
-
-div#lab {
-    margin-right:-96px;
-    margin-top: 16px;
-}
-th#head {
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head1{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head2{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head3{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head4{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head5{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-#head6{
-    background-color: rgba(117, 117, 117, 0.56);
-    color: black;
-}
-
-h6 {
-    font-weight: 400;
-    line-height: 24px;
-    /* margin: -25px 85px 46px 198px; */
-    margin-left: 86px;
-}
-.mdl-cell.mdl-cell--12-col.mdl-grid {
-    margin-left: -127px;
-    padding-top: -31px;
-    min-width: 2px;
-    /* max-width: 117px; */
-    margin-top: -35px;
-}
-button#button3 {
-    margin-top: -25px;
-}
-
-.mdl-cell.mdl-cell--6-col{
-  margin-right: -144px !important;
-    margin-bottom: 9px;
-}
-.mdl-mini-footer .mdl-logo {
-    line-height: 14px;
-    margin-left: 879px;
-}
-#search {
-    float: right;
-    margin: 100px 100;
-    border: bisque;
-    margin: -154px -811px 60px 100px;
-}
-h5 {
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    margin: 45px 0 14px;
-    margin-left: -45px;
-}
-.mdl-layout__drawer {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    width: 240px;
-    height: 96%;
-    max-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    box-sizing: border-box;
-    border-right: 1px solid #e0e0e0;
-    background: #fafafa;
-    -webkit-transform: translateX(-250px);
-    transform: translateX(-250px);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition-duration: .2s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    color: #424242;
-    overflow: visible;
-    overflow-y: auto;
-    z-index: 5;
-}
-
-select#professsion1 {
-    margin-top: -42px;
-    padding: left:12px;
-    /* margin-right: 601px; */
-    /* padding-right: 3px; */
-    margin-left: 19px;
-    width: 12%;
-}
-h6 {
-    font-weight: 400;
-    line-height: 24px;
-    /* margin: -25px 85px 46px 198px; */
-    margin-left: 98px;
+    margin-right: 16%;
 }
 div#lab {
-    margin-right: 58px;
-    margin-top: 16px;
+    margin-left: -13%;
+}button#button2 {
+    margin-right: 393px;
 }
-div.scrollmenu{
-  overflow:auto;
-  white-space:nowrap;
+button#button3 {
+    margin-right: 229px;
+    margin-top: -59px;
+    padding-right: 42px;
 }
-div.scrollmenu
-{
-  padding:0 20px;
-  margin-top:20px;
+footer.mdl-mini-footer.mdl-layout--fixed-mini-footer {
+    margin-left: -1%;
+    padding: -1%;
+    padding-left: 166px;
+    width: 99%;
 }
-
-.mdl-cell.mdl-cell--6-col
-{
-    margin-right: -186px !important;
-    margin-top: 44px;
-    margin-left: -315px;
+.mdl-mini-footer .mdl-logo {
+    line-height: 1px;
+    margin-left: 30em;
 }
-input[type="search"] {
-    margin: 8px 16px 69px 83px;
-    /* border: bisque; */
-    border-color: bisque;
+.mdl-menu__container.is-upgraded.is-visible{
+  width:100%;
 }
-</style>
+.mdl-menu.mdl-menu--bottom-left.mdl-js-menu.header_color{
+  width:100%;
+}

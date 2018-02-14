@@ -69,49 +69,60 @@
 </div>
 
 <div>
-<form id ="search">
- <input type="search" name="search" value="search"><br></form></div>
+<form action="#" id="search">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="site-search">
+                <!-- <i class="material-icons">search</i> -->
+              </label>
+              <div class="mdl-textfield">
+                <input class="border_font mdl-textfield__input" type="search" id="site-search" />
+                <label class="mdl-textfield__label" for="site-search"></label>
+              </div>
+            </div>
+        </form>
+
+</div>
 <div class="mdl-cell mdl-cell--12-col mdl-grid " id="table">   
       <div class="mdl-layout-spacer "></div>
 <table class="mdl-data-table mdl-js-data-table ">
   <thead>
     <tr >
       <th class="mdl-data-table__cell--non-numeric" id="head">S.No</th>
-      <th id="head1">Rider Name</th>
-      <th id="head2">Driver Name</th>
-      <th id="head3">Amount</th>
-      <th id="head4">Accept Status</th>
-      <th id="head5">Trip Status</th>
-      <th id="head6">Date</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head1">Rider Name</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head2">Driver Name</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head3">Amount</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head4">Accept Status</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head5">Trip Status</th>
+      <th class="mdl-data-table__cell--non-numeric"  id="head6">Date</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td class="mdl-data-table__cell--non-numeric">1</td>
-      <td>Matheus</td>
-      <td>Mark</td>
-      <td>$1.25</td>
-      <td>Begin</td>
-      <td>End</td>
-      <td>05-02-2018</td>
+      <td class="mdl-data-table__cell--non-numeric">Matheus</td>
+      <td class="mdl-data-table__cell--non-numeric">Mark</td>
+      <td class="mdl-data-table__cell--non-numeric">$1.25</td>
+      <td class="mdl-data-table__cell--non-numeric">Begin</td>
+      <td class="mdl-data-table__cell--non-numeric">End</td>
+      <td class="mdl-data-table__cell--non-numeric">05-02-2018</td>
     </tr>
     <tr>
       <td class="mdl-data-table__cell--non-numeric">2</td>
-      <td>John</td>
-      <td>Mathy</td>
-      <td>$1.25</td>
-      <td>Begin</td>
-      <td>End</td>
-      <td>05-02-2018</td>
+      <td class="mdl-data-table__cell--non-numeric" >John</td>
+      <td class="mdl-data-table__cell--non-numeric" >Mathy</td>
+      <td class="mdl-data-table__cell--non-numeric" >$1.25</td>
+      <td class="mdl-data-table__cell--non-numeric" >Begin</td>
+      <td class="mdl-data-table__cell--non-numeric" >End</td>
+      <td class="mdl-data-table__cell--non-numeric" >05-02-2018</td>
     </tr>
     <tr>
       <td class="mdl-data-table__cell--non-numeric">3</td>
-      <td>Mark</td>
-      <td>Nivan</td>
-      <td>$1.25</td>
-      <td>Begin</td>
-      <td>End</td>
-      <td>05-02-2018</td>
+      <td class="mdl-data-table__cell--non-numeric" >Mark</td>
+      <td class="mdl-data-table__cell--non-numeric" >Nivan</td>
+      <td class="mdl-data-table__cell--non-numeric" >$1.25</td>
+      <td class="mdl-data-table__cell--non-numeric" >Begin</td>
+      <td class="mdl-data-table__cell--non-numeric" >End</td>
+      <td class="mdl-data-table__cell--non-numeric" >05-02-2018</td>
     </tr>
   </tbody>
 </table>
@@ -218,6 +229,39 @@ table.mdl-data-table.mdl-js-data-table {
 div#button {
     margin-right: 121px;
 }
+
+form#search {
+    margin-left: 308px;
+    margin-top: -8%;
+    float: right;
+    margin-right: 176px;
+}
+input#site-search {
+    width: 76%;
+    margin-left: 156px;
+    margin-top: 28px;
+}
+label.mdl-textfield__label {
+    width: 76%;
+     margin-left: 156px;
+    margin-top: 28px;
+}
+.border_font
+{
+
+    
+    border:1px solid;
+    padding-bottom:0%;
+        margin-top: 25px;
+        margin-left: -463px;
+
+}
+.border_font {
+    border: 1px solid;
+    padding-bottom: 0%;
+    margin-top: 25px;
+    margin-left: 0px;
+}
 button#button2 {
     margin-top: 5px;
     margin-right: -68px;
@@ -309,11 +353,14 @@ button#button3 {
     margin-left: 721px;
 }
 
-#search {
+form#search {
+    /* margin-left: 314px; */
+    margin-top: -13%;
     float: right;
-    margin: 100px 100;
-    margin: -87px 64px 83px 137px;
+    margin-left: 26px;
+    /* margin-right: 176px; */
 }
+
 h5 {
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     margin: 45px 0 14px;
@@ -360,7 +407,7 @@ select#professsion1 {
     /* margin-right: 601px; */
     /* padding-right: 3px; */
     margin-left: 19px;
-    width: 12%;
+    width: 10%;
 }
 h6 {
     font-weight: 400;

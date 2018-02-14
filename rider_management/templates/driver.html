@@ -96,8 +96,16 @@
 
  -->
         <div id="search">
-        <form action="#" method="get">
-        <input type="text" name="q" placeholder="Search" > 
+        <form action="#" id="search">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="site-search">
+                <!-- <i class="material-icons">search</i> -->
+              </label>
+              <div class="mdl-textfield">
+                <input class="border_font mdl-textfield__input" type="search" id="site-search" />
+                <label class="mdl-textfield__label" for="site-search"></label>
+              </div>
+            </div>
         </form>
         </div>
         <div class="mdl-cell mdl-cell--12-col mdl-grid " id="table">   
@@ -241,7 +249,7 @@
     padding: left:12px;
     margin-right: 589px;
     /* padding-right: 3px; */
-    width: 9%;
+    width: 10%;
 }
 #search {
     float: right;
@@ -306,11 +314,10 @@ button#button3 {
 }*/
 footer.mdl-mini-footer {
     margin-left: -185px;
-    padding-right: 478px;
+    padding-right: 443px;
     padding-left: -70px;
-    margin-right: -174px !important;
-    width: 100% !important;
-    margin-top: 105px;
+    margin-right: -174px;
+    width: 100%;
 }
 
 
@@ -318,6 +325,7 @@ footer.mdl-mini-footer {
     line-height: 14px;
     margin-left: 638px;
     width:100% !important;
+    font-size:15px;
 }
 select#professsion1 {
     margin-top: -42px;
@@ -437,7 +445,7 @@ select#professsion1 {
     /* margin-right: 601px; */
     /* padding-right: 3px; */
     margin-left: 19px;
-    width: 12%;
+    width: 10%;
 }
 h6 {
     font-weight: 400;
@@ -482,8 +490,10 @@ div#table {
     /* margin-top: 274px; */
     /* float: left; */
     /* margin-right: 41px; */
+    margin-top: -12%;
     padding-left: 433px;
 }
+
 .mdl-data-table {
     position: relative;
     border: 1px solid rgba(0,0,0,.12);
@@ -495,8 +505,8 @@ div#table {
     margin-left: 1px;
 }
  div#lab {
-    margin-right: 101px; 
-    margin-top: 16px; 
+    margin-right: 236px;
+    margin-top: 16px;
     padding-right: -140px;
     font-size: 18px;
 }
@@ -533,5 +543,34 @@ div.scrollmenu {
     height: 50%;
     /* width: 50%; */
     z-index: 999;
+}
+
+form#search {
+    margin-left: 328px;
+    margin-top: -13%;
+    float: right;
+    margin-right: -81px;
+}
+input#site-search {
+    width: 76%;
+}
+label.mdl-textfield__label {
+    width: 76%;
+}
+.border_font
+{
+
+    
+    border:1px solid;
+    padding-bottom:0%;
+        margin-top: 25px;
+        margin-left: -463px;
+
+}
+.border_font {
+    border: 1px solid;
+    padding-bottom: 0%;
+    margin-top: 25px;
+    margin-left: 0px;
 }
 </style>
